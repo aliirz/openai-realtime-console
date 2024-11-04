@@ -507,7 +507,7 @@ export function ConsolePage() {
     <div data-component="ConsolePage">
       <div className="content-top">
         <div className="content-title">
-          <img src="/kayrobo.png.svg" />
+          <img src="/kayrobo.png" />
           <span>Kay Voice Activated Bot</span>
         </div>
         <div className="content-api-key">
