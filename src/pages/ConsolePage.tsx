@@ -59,14 +59,15 @@ export function ConsolePage() {
    * Ask user for API Key
    * If we're using the local relay server, we don't need this
    */
-  const apiKey = LOCAL_RELAY_SERVER_URL
-    ? ''
-    : localStorage.getItem('tmp::voice_api_key') ||
-      prompt('OpenAI API Key') ||
-      '';
-  if (apiKey !== '') {
+  // const apiKey = LOCAL_RELAY_SERVER_URL
+  //   ? ''
+  //   : localStorage.getItem('tmp::voice_api_key') ||
+  //     prompt('OpenAI API Key') ||
+  //     '';
+  const apiKey = "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";
+  // if (apiKey !== '') {
     localStorage.setItem('tmp::voice_api_key', apiKey);
-  }
+  // }
 
   /**
    * Instantiate:
@@ -507,8 +508,8 @@ export function ConsolePage() {
     <div data-component="ConsolePage">
       <div className="content-top">
         <div className="content-title">
-          <img src="/openai-logomark.svg" />
-          <span>realtime console</span>
+          <img src="/kayrobo.png" />
+          <span>Kay Voice Activated Bot</span>
         </div>
         <div className="content-api-key">
           {!LOCAL_RELAY_SERVER_URL && (
@@ -691,7 +692,7 @@ export function ConsolePage() {
             />
           </div>
         </div>
-        <div className="content-right">
+        {/* <div className="content-right">
           <div className="content-block map">
             <div className="content-block-title">get_weather()</div>
             <div className="content-block-title bottom">
@@ -724,7 +725,7 @@ export function ConsolePage() {
               {JSON.stringify(memoryKv, null, 2)}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
