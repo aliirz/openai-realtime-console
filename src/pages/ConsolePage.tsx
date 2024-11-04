@@ -508,7 +508,7 @@ export function ConsolePage() {
       <div className="content-top">
         <div className="content-title">
           <img src="/kayrobo.png" />
-          <span>Kay Voice Activated Bot</span>
+          <span>Rahbar</span>
         </div>
         <div className="content-api-key">
           {!LOCAL_RELAY_SERVER_URL && (
